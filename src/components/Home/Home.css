@@ -1,0 +1,50 @@
+.home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro{
+    max-width: 540px;
+    text-align: center;
+    background-color: var(--container-color);
+    border: solid var(--first-color) ;
+    padding: 40px; 
+    border-radius: 10px;
+}
+.home__img{
+    margin-bottom: 1.5rem;
+}
+
+.home__name{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 2rem;
+}
+.scroll__down{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+}
+.home__education{
+    margin-top: 45px; 
+    font-size: var(--h3-font-size);
+}
+.home__scroll-name{
+    font-size: var(--small-font-size);
+}
+.mouse{
+    border: 2px solid var(--text-color);
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+
+}
+.para{
+    font-size: var(--small-font-size);
+}
+    
+
+

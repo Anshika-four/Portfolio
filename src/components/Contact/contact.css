@@ -1,0 +1,32 @@
+.contact .section{
+    padding-bottom: 6.25rem;
+}
+.contact__container{
+    height: 250px;
+    background-color: var(--container-color) ;
+    align-items: center;
+    margin-bottom: 50px
+}
+.contact__title{
+    font-size: var(--normal-font-size);
+    margin-bottom: .5rem;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    margin-left: 50px;
+}
+.para{
+    margin: 50px;
+    text-align:center;
+    font-size: var(--h3-font-size)
+}
+.home__socials{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    
+}
