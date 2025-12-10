@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Anshika-four/Portfolio/static/css/main.9c2beffe.css",
+    "main.js": "/Anshika-four/Portfolio/static/js/main.e33d67d4.js",
+    "static/js/453.1407b060.chunk.js": "/Anshika-four/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/brain.png": "/Anshika-four/Portfolio/static/media/brain.53479f433201dc15660c.png",
+    "static/media/mind.jpg": "/Anshika-four/Portfolio/static/media/mind.745cf084dbbca38152f0.jpg",
+    "static/media/exp.jpg": "/Anshika-four/Portfolio/static/media/exp.ee5f4e60df93366c833c.jpg",
+    "static/media/curr.jpg": "/Anshika-four/Portfolio/static/media/curr.cdb56de8fbf9692c70ed.jpg",
+    "static/media/hi.jpeg": "/Anshika-four/Portfolio/static/media/hi.435eadc51cdf6d218db8.jpeg",
+    "static/media/work-6.svg": "/Anshika-four/Portfolio/static/media/work-6.e53b868f21628c547fd12d76c5b599db.svg",
+    "static/media/work-5.svg": "/Anshika-four/Portfolio/static/media/work-5.d7139045fa5cd7bea4b9807b31919a00.svg",
+    "static/media/avatar-1.svg": "/Anshika-four/Portfolio/static/media/avatar-1.e18c937d0a33154687422e5da407f480.svg",
+    "static/media/dots-bg.svg": "/Anshika-four/Portfolio/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
+    "index.html": "/Anshika-four/Portfolio/index.html",
+    "main.9c2beffe.css.map": "/Anshika-four/Portfolio/static/css/main.9c2beffe.css.map",
+    "main.e33d67d4.js.map": "/Anshika-four/Portfolio/static/js/main.e33d67d4.js.map",
+    "453.1407b060.chunk.js.map": "/Anshika-four/Portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c2beffe.css",
+    "static/js/main.e33d67d4.js"
+  ]
+}
