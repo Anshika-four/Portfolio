@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
-const FILE_URL='http://localhost:3000/AnshikaSharmaResume_SWE.pdf'
+const FILE_URL = process.env.PUBLIC_URL + "/AnshikaSharmaResume_SWE.pdf";
+
 const About = () => {
     const download = (url) => {
         const fileName = url.split('/').pop()
