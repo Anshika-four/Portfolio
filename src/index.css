@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap);
 
-:root{
+/*:root{
   --first-color : hsl(353, 100%, 65%);
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
@@ -22,7 +22,66 @@
   --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
 
   --border-radius: 20px;
+}*/
+:root {
+  /* 🌌 Background Colors */
+  --body-color: hsl(268, 18%, 14%);         /* deep dark blue/black */
+ --container-color: linear-gradient(
+  135deg,
+  rgba(255, 80, 160, 0.42),
+  rgba(150, 80, 220, 0.42),
+  rgba(60, 140, 255, 0.42)
+);
+
+
+
+
+
+  /* 🎨 Neon + Gradient Colors */
+   /* neon pink */
+  --second-color: #00eaff; /* neon cyan */
+  
+  /* ⚡ Neon Text Colors */
+  
+  --title-color: hsl(0, 0%, 100%);   /* light neon bluish white */
+  --text-color: #a8b2d1;    /* soft grey-blue */
+
+  /* 🎉 Neon Gradient */
+  --gradient-primary: linear-gradient(135deg, #ff008c, #ff4d4d, #ffb300);
+  --gradient-neon: linear-gradient(135deg, #00eaff, #4d79ff);
+
+  /* 🧪 Typography */
+  --body-font: 'Inter';
+  --h1-font-size: 2.4rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.3rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.8rem;
+
+  /* 💪 Font Weights */
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* 🌫️ Soft Neon Glow Shadow */
+  --shadow: 0 0 25px rgba(255, 0, 140, 0.25);
+
+  /* 🟣 Card Rounding */
+  --border-radius: 22px;
 }
+
+@media screen and (max-width: 1024px){
+  :root{
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size : 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
 *{
   margin: 0;
   padding: 0;

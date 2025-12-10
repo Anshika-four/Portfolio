@@ -21,7 +21,7 @@ const Data =[
     year: "2022-2026",
     title: "B.Tech, Mathematics and Computing",
     school: "Madhav Institute of Technology and Science, Gwalior, M.P.",
-    desc: "9.034 CGPA"
+    desc: "9.05 CGPA"
 }
 
 

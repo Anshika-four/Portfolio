@@ -8,6 +8,7 @@ import Portfolio from './components/portfolio/Portfolio.jsx'
 import Contact from './components/Contact/contact.jsx'
 import Experience from './components/Experience/Experience.jsx';
 import Certifications from './components/Certifications/Certifications.jsx';
+import Education from './components/Education/Education.jsx';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Home/>
         <About/>
         <Experience/>
+        <Education/>
         <Portfolio/>
         <Certifications/>
         <Contact/>

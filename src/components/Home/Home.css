@@ -8,14 +8,14 @@
 .intro{
     max-width: 540px;
     text-align: center;
-    background-color: var(--container-color);
-    border: solid var(--first-color) ;
+    background: var(--container-color);
+    border-radius: 25px;
     padding: 40px; 
-    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
 }
-.home__img{
-    margin-bottom: 1.5rem;
-}
+
 
 .home__name{
     font-size: var(--h1-font-size);
@@ -44,6 +44,48 @@
 }
 .para{
     font-size: var(--small-font-size);
+}
+.profile{
+width: 160px;
+  height: 160px;
+  object-fit: cover; /* ensures the image fills the circle */
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  align-self: center; 
+}
+@media screen and (max-width: 768px) {
+  .home__name {
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home__education {
+    font-size: 1rem;
+  }
+
+  .para {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home__name {
+    font-size: 1.3rem;
+  }
+
+  .home__education,
+  .para {
+    font-size: 0.9rem;
+  }
 }
     
 

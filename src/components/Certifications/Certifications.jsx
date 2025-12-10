@@ -10,7 +10,7 @@ const Data=[
     {
         id:1,
         title: "DSA",
-        description: "235+ DSA questions on LeetCode."
+        description: "500+ DSA questions on LeetCode."
     },
     {
         id:2,
@@ -25,7 +25,8 @@ const Data=[
     {
         id:4,
         title: "CSS3 Certification",
-        description: "CSS3 Certification from Infosys Springboard."
+        description: "CSS3 Certification from Infosys Springboard.",
+        
     },
     {
         id:5,
@@ -48,6 +49,7 @@ const Certifications = () => {
                 slidesPerView={1}
                 pagination={{clickable: true}}
                 loop={true}
+                grabCursor={true}
             
             >
                 {Data.map(({ id, title, description}) => {

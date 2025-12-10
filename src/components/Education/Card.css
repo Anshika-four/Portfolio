@@ -1,0 +1,76 @@
+.exp-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.10);
+}
+
+.exp-card-link a {
+  font-size: 0.85rem;
+  color: #555;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.exp-card-link a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.exp-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.exp-card-company {
+  font-weight: 500;
+  color: #444;
+}
+
+.exp-card-duration {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+.exp-card-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .exp-card {
+    padding: 16px;
+  }
+
+  .card-image {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .exp-card {
+    padding: 14px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-image {
+    height: 130px;
+  }
+}

@@ -1,18 +1,37 @@
 
-.timeline{
-    background-color: var(--container-color);
-    padding: 1.275rem;
-    border-radius: var(--border-radius);
-    position: relative;
-    box-shadow: var(--shadow);
-
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 40px;
+  padding-left: 40px; /* space for the icons */
 }
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: relative;
+  left: 12px; /* adjust depending on icon size */
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: white;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+/* Icon container (inside Card component) */
+
+
 .timeline__item{
     position:relative;
     padding-left: 3.125rem;
     padding-bottom: 0.125rem;
 
 
+}
+.resume__container{
+    background: var(--container-color);
+    border-radius: 25px;
 }
 timeline__item:last-child{
     padding-bottom: 0;
@@ -26,18 +45,20 @@ timeline__item:last-child{
     left:0.5rem;
     top: 0;
     margin-right: 250px;
+    gap: 25px;
 }
 .timeline .icon-graduation{
     position: absolute;
     left: 0rem;
     top: 0;
     font-size: var(--h2-font-size);
-    color: var(--first-color);
+    color: white;
     background-color: var(--container-color);
     padding: 0.5rem 0;
+    gap: 25px;
 }
 .timeline__date{
-    color: #8b88b1;
+    color: hsl(245, 20%, 74%);
     font-size: var(--normal-font-size);
 }
 .timeline__title{
@@ -48,4 +69,5 @@ timeline__item:last-child{
 .timeline__school{
     font-size: var(--h4-font-size);
 }
+
 

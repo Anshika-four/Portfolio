@@ -17,7 +17,7 @@
 }
 
 .description{
-    background-color: var(--container-color);
+    background: var(--container-color);
     padding: 1.875rem;
     margin-top: 1.5rem;
     box-shadow: var(--shadow);
@@ -41,7 +41,7 @@
 .swiper-pagination-bullet{
     width: 0.5rem !important;
     height:0.375rem !important;
-    background-color: var(--first-color) !important;
+    background-color: #9094ff !important;
     opacity: 1 !important; 
 }
 .swiper-pagination-horizontal .swiper-pagination-bullets .swiper-pagination-bullet{

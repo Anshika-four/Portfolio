@@ -1,0 +1,16 @@
+
+.divisions{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 20px;
+    
+    
+}
+.exp__container{
+    width: 100%;
+    
+    background: var(--container-color);
+    padding: 50px;
+    border-radius: 25px;
+}

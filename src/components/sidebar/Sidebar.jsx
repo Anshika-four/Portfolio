@@ -1,66 +1,78 @@
-import React from 'react'
-import "./Sidebar.css"
-import Logo from "../../assets/logo.svg"
+import React, { useState } from 'react';
+import "./Sidebar.css";
+
+const navItems = [
+  { href: "#home", icon: "icon-home", title: "Home" },
+  { href: "#about", icon: "icon-user-following", title: "About" },
+  { href: "#resume", icon: "icon-graduation", title: "Education" },
+  { href: "#experience", icon: "icon-organization", title: "Experience" },
+  { href: "#work", icon: "icon-screen-desktop", title: "Projects" },
+  { href: "#certifications", icon: "icon-layers", title: "Certifications & Achievements" },
+  { href: "#contact", icon: "icon-bubble", title: "Contact" },
+];
+
 const Sidebar = () => {
+  const [activeTooltip, setActiveTooltip] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const showTooltip = (index) => {
+    setActiveTooltip(index);
+    setTimeout(() => {
+      setActiveTooltip(null);
+    }, 2000); // Hide after 2s
+  };
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+ 
+
+
   return (
-    <>    <aside className='aside'>
-      <a href='#home' className="nav__logo">
-        
-        </a>
+    <>
+      <aside className='aside'>
+        <a href='#home' className="nav__logo"></a>
 
         <nav className="nav">
           <div className="nav__menu">
             <ul className="nav__list">
-              <li className="nav__item">
-                <a href="#home" className="nav__link">
-                  <i className="icon-home" title="Home"></i>
-                  
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#about" className="nav__link">
-                  <i className="icon-user-following" title="About"></i>
-                </a>
-              </li>
-
-              <li className="nav__item">
-                <a href="#resume" className="nav__link">
-                  <i className="icon-graduation" title="Education"></i>
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#work" className="nav__link">
-                  <i className="icon-briefcase" title="Portfolio"></i>
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#certifications" className="nav__link">
-                  <i className="icon-layers" title="Certifications and Achievements"></i>
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#contact" className="nav__link">
-                  <i className="icon-bubble" title="Contact"></i>
-                </a>
-              </li>
+              {navItems.map((item, index) => (
+                <li key={index} className="nav__item" onClick={() => showTooltip(index)}>
+                  <a href={item.href} className="nav__link">
+                    <i className={item.icon}></i>
+                    <span className={`tooltip ${activeTooltip === index ? "show" : ""}`}>
+                      {item.title}
+                    </span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </nav>
-        <div className="nav__footer">
-          <span className="copyright">&copy; 2024</span>
-        </div>
+      </aside>
 
-        
-      
-    </aside>
-    <div className="nav__toggle">
-    <i className="icon-menu">
-      
-    </i>
-  </div>
-  </>
-  
-  )
-}
+      <div className="nav__toggle">
+        <i className="icon-menu" onClick={toggleSidebar}></i>
+      </div>
+      <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`} >
+        <nav className="nav">
+          <ul className="nav__list">
+            <i className="icon-arrow-left" onClick={toggleSidebar}></i>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                
+                <a href={item.href} >
+                  <i className={item.icon}></i> {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </aside>
+    </>
+  );
+};
 
-export default Sidebar
+export default Sidebar;
+
+
+
