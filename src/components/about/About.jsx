@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-const FILE_URL = process.env.PUBLIC_URL + "/AnshikaSharmaResume_SWE.pdf";
+const FILE_URL = 'https://Anshika-four.github.io/Portfolio/AnshikaSharmaResume_SWE.pdf';
 
 const About = () => {
     const download = (url) => {
